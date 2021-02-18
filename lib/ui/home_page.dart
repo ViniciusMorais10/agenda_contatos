@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:agenda_contatos/helpers/contact_helper.dart';
 import 'package:flutter/material.dart';
 
+import '../helpers/contact_helper.dart';
 import 'contact_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,6 +20,14 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+
+    // Contact c = Contact();
+    // c.name = "Vinicius de Morais2";
+    // c.mail = "vinicius@vtechdev.com.br";
+    // c.phone = "6598562345";
+    // c.image = "testeimg";
+
+    // helper.saveContact(c);
 
     _getAllContacts();
   }
